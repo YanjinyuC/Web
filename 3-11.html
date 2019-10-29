@@ -1,0 +1,21 @@
+<!--例：3-11.html，不声明局部变量和全局变量的情况。-->
+
+    <HTML>
+    <head><H1>
+    <script language="VBScript">
+    Sub S
+    Y=2                            <!--Y为全局变量-->
+    document.write"在过程内Y为："
+    dOcument.write Y
+    End Sub
+    </script>
+    </head>
+    <body>
+    <script language="VBScript">
+    Y=1                            <!--Y为全局变量-->
+    Call S
+    document.write"<p>在过程外Y为："
+    document.write Y
+    </script>
+    </body>
+    </HTML>
